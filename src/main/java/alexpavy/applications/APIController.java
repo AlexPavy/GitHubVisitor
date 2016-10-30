@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping(path = "/", produces = "application/json")
-public class MVCController {
+public class APIController {
 
     private static final String GITHUB_ROOT = "https://api.github.com";
     private static final String USERS_ENDPOINT = "/users";
@@ -23,7 +23,7 @@ public class MVCController {
     private final HTTPJSONService httpService;
 
     @Autowired
-    public MVCController(HTTPJSONService httpService) {
+    public APIController(HTTPJSONService httpService) {
         this.httpService = httpService;
     }
 
